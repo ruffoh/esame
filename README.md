@@ -34,7 +34,7 @@ VARCHAR(30) Titolo NOT NULL,
 VARCHAR(200) DescrizioneCorta NOT NULL,
 INT Monete NOT NULL,
 INT Argomento NOT NULL,
-COSTRAIN fkArgomentoVideogioco FOREGEIN KEY (Argomeno) REFERENCE Argomenti(ID),
+COSTRAIN fkArgomentoVideogioco FOREIGN KEY (Argomento) REFERENCE Argomenti(ID),
 )
 ```
 Ho scelto di rappresentare questa parte di codice SQL perché, come richiesto, contiene vincoli di integrità referenziale (in questo caso sull’argomento).
